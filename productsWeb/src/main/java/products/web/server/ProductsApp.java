@@ -23,6 +23,12 @@ public class ProductsApp extends AppServer {
 
 	@Override
 	public void routes() {
+		apiRoutes();
+	}
+	
+	private void apiRoutes() {
+
+
 		after((req, res) -> {
 			res.type("application/json");
 		});
